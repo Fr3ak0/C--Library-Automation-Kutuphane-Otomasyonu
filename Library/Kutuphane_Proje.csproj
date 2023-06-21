@@ -1,0 +1,447 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{03325453-DF95-4ED2-A2F8-66208402FEF1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Kutuphane_Proje</RootNamespace>
+    <AssemblyName>Kutuphane_Proje</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FrmAdminGiris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAdminGiris.Designer.cs">
+      <DependentUpon>FrmAdminGiris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAdminMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAdminMain.Designer.cs">
+      <DependentUpon>FrmAdminMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmChangeUserSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmChangeUserSettings.Designer.cs">
+      <DependentUpon>FrmChangeUserSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEditBooks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEditBooks.Designer.cs">
+      <DependentUpon>FrmEditBooks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEscrowBook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEscrowBook.Designer.cs">
+      <DependentUpon>FrmEscrowBook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmFollowEscrowedBooks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmFollowEscrowedBooks.Designer.cs">
+      <DependentUpon>FrmFollowEscrowedBooks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmGirisler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmGirisler.Designer.cs">
+      <DependentUpon>FrmGirisler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmListBookAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmListBookAdmin.Designer.cs">
+      <DependentUpon>FrmListBookAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmStudentGiris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmStudentGiris.Designer.cs">
+      <DependentUpon>FrmStudentGiris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTeacherGiris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTeacherGiris.Designer.cs">
+      <DependentUpon>FrmTeacherGiris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTeacherMainFace.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTeacherMainFace.Designer.cs">
+      <DependentUpon>FrmTeacherMainFace.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTeacherRequest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTeacherRequest.Designer.cs">
+      <DependentUpon>FrmTeacherRequest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTeacherStudentPreFace.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTeacherStudentPreFace.Designer.cs">
+      <DependentUpon>FrmTeacherStudentPreFace.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_RequestRegistaration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_RequestRegistaration.Designer.cs">
+      <DependentUpon>Frm_RequestRegistaration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FromStudentEntrence.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FromStudentEntrence.Designer.cs">
+      <DependentUpon>FromStudentEntrence.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KutuphaneProjeDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>KutuphaneProjeDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="KutuphaneProjeDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>KutuphaneProjeDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="KutuphaneProjeDataSet10.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>KutuphaneProjeDataSet10.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="KutuphaneProjeDataSet11.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>KutuphaneProjeDataSet11.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="KutuphaneProjeDataSet121.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>KutuphaneProjeDataSet121.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="KutuphaneProjeDataSet13.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>KutuphaneProjeDataSet13.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="KutuphaneProjeDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>KutuphaneProjeDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="KutuphaneProjeDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>KutuphaneProjeDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="KutuphaneProjeDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>KutuphaneProjeDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="KutuphaneProjeDataSet51.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>KutuphaneProjeDataSet51.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="KutuphaneProjeDataSet61.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>KutuphaneProjeDataSet61.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="KutuphaneProjeDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>KutuphaneProjeDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="KutuphaneProjeDataSet8.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>KutuphaneProjeDataSet8.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="KutuphaneProjeDataSet9.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>KutuphaneProjeDataSet9.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="NotificationManager.cs" />
+    <Compile Include="PasswordHashCozucu.cs" />
+    <Compile Include="PasswordHasher.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="sqlconnection.cs" />
+    <EmbeddedResource Include="FrmAdminGiris.resx">
+      <DependentUpon>FrmAdminGiris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAdminMain.resx">
+      <DependentUpon>FrmAdminMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmChangeUserSettings.resx">
+      <DependentUpon>FrmChangeUserSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEditBooks.resx">
+      <DependentUpon>FrmEditBooks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEscrowBook.resx">
+      <DependentUpon>FrmEscrowBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmFollowEscrowedBooks.resx">
+      <DependentUpon>FrmFollowEscrowedBooks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmGirisler.resx">
+      <DependentUpon>FrmGirisler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmListBookAdmin.resx">
+      <DependentUpon>FrmListBookAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmStudentGiris.resx">
+      <DependentUpon>FrmStudentGiris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTeacherGiris.resx">
+      <DependentUpon>FrmTeacherGiris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTeacherMainFace.resx">
+      <DependentUpon>FrmTeacherMainFace.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTeacherRequest.resx">
+      <DependentUpon>FrmTeacherRequest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTeacherStudentPreFace.resx">
+      <DependentUpon>FrmTeacherStudentPreFace.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_RequestRegistaration.resx">
+      <DependentUpon>Frm_RequestRegistaration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FromStudentEntrence.resx">
+      <DependentUpon>FromStudentEntrence.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="KutuphaneProjeDataSet.xsc">
+      <DependentUpon>KutuphaneProjeDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="KutuphaneProjeDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>KutuphaneProjeDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="KutuphaneProjeDataSet.xss">
+      <DependentUpon>KutuphaneProjeDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="KutuphaneProjeDataSet1.xsc">
+      <DependentUpon>KutuphaneProjeDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="KutuphaneProjeDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>KutuphaneProjeDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="KutuphaneProjeDataSet1.xss">
+      <DependentUpon>KutuphaneProjeDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="KutuphaneProjeDataSet10.xsc">
+      <DependentUpon>KutuphaneProjeDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="KutuphaneProjeDataSet10.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>KutuphaneProjeDataSet10.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="KutuphaneProjeDataSet10.xss">
+      <DependentUpon>KutuphaneProjeDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="KutuphaneProjeDataSet11.xsc">
+      <DependentUpon>KutuphaneProjeDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="KutuphaneProjeDataSet11.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>KutuphaneProjeDataSet11.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="KutuphaneProjeDataSet11.xss">
+      <DependentUpon>KutuphaneProjeDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="KutuphaneProjeDataSet121.xsc">
+      <DependentUpon>KutuphaneProjeDataSet121.xsd</DependentUpon>
+    </None>
+    <None Include="KutuphaneProjeDataSet121.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>KutuphaneProjeDataSet121.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="KutuphaneProjeDataSet121.xss">
+      <DependentUpon>KutuphaneProjeDataSet121.xsd</DependentUpon>
+    </None>
+    <None Include="KutuphaneProjeDataSet13.xsc">
+      <DependentUpon>KutuphaneProjeDataSet13.xsd</DependentUpon>
+    </None>
+    <None Include="KutuphaneProjeDataSet13.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>KutuphaneProjeDataSet13.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="KutuphaneProjeDataSet13.xss">
+      <DependentUpon>KutuphaneProjeDataSet13.xsd</DependentUpon>
+    </None>
+    <None Include="KutuphaneProjeDataSet2.xsc">
+      <DependentUpon>KutuphaneProjeDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="KutuphaneProjeDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>KutuphaneProjeDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="KutuphaneProjeDataSet2.xss">
+      <DependentUpon>KutuphaneProjeDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="KutuphaneProjeDataSet3.xsc">
+      <DependentUpon>KutuphaneProjeDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="KutuphaneProjeDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>KutuphaneProjeDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="KutuphaneProjeDataSet3.xss">
+      <DependentUpon>KutuphaneProjeDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="KutuphaneProjeDataSet4.xsc">
+      <DependentUpon>KutuphaneProjeDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="KutuphaneProjeDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>KutuphaneProjeDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="KutuphaneProjeDataSet4.xss">
+      <DependentUpon>KutuphaneProjeDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="KutuphaneProjeDataSet51.xsc">
+      <DependentUpon>KutuphaneProjeDataSet51.xsd</DependentUpon>
+    </None>
+    <None Include="KutuphaneProjeDataSet51.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>KutuphaneProjeDataSet51.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="KutuphaneProjeDataSet51.xss">
+      <DependentUpon>KutuphaneProjeDataSet51.xsd</DependentUpon>
+    </None>
+    <None Include="KutuphaneProjeDataSet61.xsc">
+      <DependentUpon>KutuphaneProjeDataSet61.xsd</DependentUpon>
+    </None>
+    <None Include="KutuphaneProjeDataSet61.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>KutuphaneProjeDataSet61.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="KutuphaneProjeDataSet61.xss">
+      <DependentUpon>KutuphaneProjeDataSet61.xsd</DependentUpon>
+    </None>
+    <None Include="KutuphaneProjeDataSet7.xsc">
+      <DependentUpon>KutuphaneProjeDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="KutuphaneProjeDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>KutuphaneProjeDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="KutuphaneProjeDataSet7.xss">
+      <DependentUpon>KutuphaneProjeDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="KutuphaneProjeDataSet8.xsc">
+      <DependentUpon>KutuphaneProjeDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="KutuphaneProjeDataSet8.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>KutuphaneProjeDataSet8.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="KutuphaneProjeDataSet8.xss">
+      <DependentUpon>KutuphaneProjeDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="KutuphaneProjeDataSet9.xsc">
+      <DependentUpon>KutuphaneProjeDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="KutuphaneProjeDataSet9.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>KutuphaneProjeDataSet9.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="KutuphaneProjeDataSet9.xss">
+      <DependentUpon>KutuphaneProjeDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resimler\bookshelf.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\desktop-wallpaper-library-vintage-library.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resimler\1564529_mechanism_options_settings_configuration_setting_icon.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
